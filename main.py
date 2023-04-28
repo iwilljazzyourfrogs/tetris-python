@@ -1,7 +1,6 @@
+import pygame as pg
 import os
 os.environ['pg_HIDE_SUPPORT_PROMPT'] = "True"
-import pygame as pg
-
 from settings import *
 from piece import *
 
@@ -93,7 +92,7 @@ if __name__ == "__main__":
         if game.piece is None:
             game.new_piece()
         counter += 1
-        if counter > 100000:
+        if counter > 999999999:
             counter = 0
 
         if counter % (FPS // game.level // 2) == 0:
